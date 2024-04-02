@@ -5,8 +5,8 @@ input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
 })
 basic.forever(function () {
-    humidité = pins.analogReadPin(AnalogPin.P3)
-    basic.showString("" + (pins.analogReadPin(AnalogPin.P3)))
+    humidité = pins.analogReadPin(AnalogPin.P2)
+    basic.showString("" + (pins.analogReadPin(AnalogPin.P2)))
     basic.pause(1000)
     if (humidité <= 700) {
         basic.showIcon(IconNames.Happy)
